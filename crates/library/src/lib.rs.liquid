@@ -1,0 +1,25 @@
+//! Reusable building blocks for the {{ project-name }} application.
+
+/// Returns the greeting used by the {{ project-name }} application.
+///
+/// # Examples
+///
+/// ```
+/// use {{ crate_name }}_library::greeting;
+///
+/// assert_eq!(greeting(), "Hello from {{ project-name }}!");
+/// ```
+#[must_use]
+pub fn greeting() -> &'static str {
+    "Hello from {{ project-name }}!"
+}
+
+#[cfg(test)]
+mod tests {
+    use super::greeting;
+
+    #[test]
+    fn returns_the_project_greeting() {
+        assert_eq!(greeting(), "Hello from {{ project-name }}!");
+    }
+}

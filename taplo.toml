@@ -1,0 +1,21 @@
+[formatting]
+reorder_keys = false
+indent_string = "    "
+array_auto_expand = false
+array_auto_collapse = false
+inline_table_expand = false
+
+[[rule]]
+include = ["**/Cargo.toml"]
+keys = [
+    "dependencies",
+    "dev-dependencies",
+    "build-dependencies",
+    "workspace.dependencies",
+    "target.*.dependencies",
+    "target.*.dev-dependencies",
+    "target.*.build-dependencies",
+]
+
+[rule.formatting]
+reorder_keys = true

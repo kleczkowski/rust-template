@@ -1,0 +1,25 @@
+# {{ project-name }}
+
+{{ project_description }}
+
+## Local development
+
+Install the project tools and run all checks:
+
+```sh
+make install-tools
+make check
+```
+
+`make help` lists the individual formatting, linting, build, test, and
+doc-test commands.
+
+## Publish on GitHub
+
+Create an empty GitHub repository named `{{ project-name }}` under
+`{{ github_username }}`, then run:
+
+```sh
+git remote add origin git@github.com:{{ github_username }}/{{ project-name }}.git
+git push -u origin main
+```

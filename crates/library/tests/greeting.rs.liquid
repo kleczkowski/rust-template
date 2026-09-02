@@ -1,0 +1,8 @@
+//! Integration coverage for the library's public API.
+
+use {{ crate_name }}_library::greeting;
+
+#[test]
+fn returns_the_project_greeting() {
+    assert_eq!(greeting(), "Hello from {{ project-name }}!");
+}

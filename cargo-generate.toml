@@ -1,0 +1,6 @@
+[template]
+cargo_generate_version = ">=0.23.0"
+
+[placeholders]
+github_username = { type = "string", prompt = "GitHub username", regex = "^[A-Za-z0-9-]+$" }
+project_description = { type = "string", prompt = "Project description" }
